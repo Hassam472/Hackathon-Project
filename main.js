@@ -1,8 +1,10 @@
-"use strict";
-const toggleSkillsButton = document.getElementById('toggle-skills');
-const skillsSection = document.getElementById('skills');
-toggleSkillsButton === null || toggleSkillsButton === void 0 ? void 0 : toggleSkillsButton.addEventListener('click', () => {
-    if (skillsSection) {
-        skillsSection.style.display = skillsSection.style.display === 'none' ? 'block' : 'none';
-    }
-});
+// Get the button and section elements
+const button = document.getElementById('toggle-skills');
+const sections = document.getElementById('skills');
+// Ensure both elements exist before adding the event listener
+if (button && sections) {
+    button.addEventListener('click', () => {
+        sections.style.visibility = "hidden";
+    });
+}
+export {};
