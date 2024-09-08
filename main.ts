@@ -7,4 +7,5 @@ if (button && sections) {
     button.addEventListener('click', () => {
         sections.style.visibility = "hidden";
     });
-}
+
+} 

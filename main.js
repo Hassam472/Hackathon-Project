@@ -5,4 +5,4 @@ if (button && sections) {
         sections.style.visibility = "hidden";
     });
 }
-export {};
+
