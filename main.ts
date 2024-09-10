@@ -1,11 +1,16 @@
-
-const button = document.getElementById('toggle-skills');
-const sections = document.getElementById('skills');
-
+const button = document.getElementById('toggle-skills') as HTMLElement;
+const sections = document.getElementById('skills') as HTMLElement;
 
 if (button && sections) {
-    button.addEventListener('click', () => {
-        sections.style.visibility = "hidden";
-    });
+    
+    sections.style.display = "block";
 
-} 
+    button.addEventListener('click', () => {
+        
+        if (sections.style.display === "block") {
+            sections.style.display = "none";
+        } else {
+            sections.style.display = "block";
+        }
+    });
+}
